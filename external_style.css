@@ -1,0 +1,94 @@
+html{
+    background-image: url("pictures/background2.png");
+    background-size: 20-px;
+    background-repeat: repeat;
+}
+
+body {
+    display:flex;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    flex-direction: column;
+    font-size: 16pt;
+     margin: 3em;
+     background-image: linear-gradient(rgb(5, 71, 215)  , rgb(57, 108, 219),rgb(5, 71, 215)24px,rgba(0,0,0,0) 24px);
+     background-color: rgb(213, 211, 211);
+     border: outset;
+     color: rgb(10, 6, 6);
+     
+     }
+
+     a:visited {
+        color:rgb(169, 43, 211);
+        text-decoration:none;
+        }
+
+    
+
+    nav{
+        text-align: left;
+        flex-direction: row;
+        width: 300px;
+        border: 4px ;  
+        background: rgb(213, 211, 211);
+        background-image: linear-gradient(rgb(0, 81, 255), rgb(56, 110, 225),rgb(0, 81, 255)24px, rgba(0,0,0,0) 24px);
+        border: outset;
+        }
+
+    nav img{
+        float: left;
+    }
+
+
+    nav ul li{
+        text-align: left;
+        align-items: left;
+        flex-direction: row;
+        display: flex;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    header{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 200px;
+        display:flexbox;
+        margin: auto;
+        text-align: center;
+        color:black;
+        font-size: 24pt;
+    }
+
+    img.b{
+        border: outset;
+        display: flex;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    div{
+        position: flex;
+        text-align: center;
+    }
+
+    canvas{
+        position: flex;
+        border: inset;
+        top:0;
+        left: 0;
+        z-index: -1;
+    }
+
+
+    

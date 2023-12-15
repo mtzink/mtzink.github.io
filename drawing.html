@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Drawing Page</title>
+        <meta charset="UTF-8">
+        <nav>
+            <img  src = "pictures/smileButton.png" alt = "pixel image of smiley face that smiles more when you hove over it" width="24" height="24" onmouseover="this.src='pictures/hoverButton.png'" onmouseout="this.src='pictures/smileButton.png'" >
+            <br>
+            <ul>
+                <li><a href="index.html">Home Page<img class = a alt = "pixel image of star" src = "pictures/star.png" width="15" height="15"></a></li>
+                <li><a href="hometown.html">Hometown<img class = a alt = "pixel image of house" src = "pictures/home.png" width="15" height="15"></a></li>
+                <li><a href="project.html">Projects<img class = a alt = "pixel image of gear" src = "pictures/gear.png" width="15" height="15"></a></li>
+                <li><a href="resume.html">Resume<img class = a alt = "pixel image of paper" src = "pictures/page.png" width="15" height="15"></a></li>
+                <li><a href="contact.html">Contact<img class = a alt = "pixel image of envelope" src = "pictures/mail.png" width="15" height="15"></a></li>
+                <li><a href="drawing.html">Drawing<img class = a alt = "pixel image of paintbrush" src = "pictures/brush.png" width="15" height="15"></a></li></ul></nav>
+        <link href="external_style.css" rel="stylesheet">
+        
+        <header>Time to Draw!</header><br><br>
+    <p>Recently, I've tried to practice drawing more frequently in my free-time. While not directly related to any of my career goals, its a skill I've wanted to improve for the
+        longest time. While I still challenge myself to get better, it's become a great pastime that allows for me to take some time to relax.<br><br>
+    I was thinking of sharing some of my favorite drawings here, but instead I wanted to share a space where anyone browsing this site can take a moment to draw.
+        Below, you'll find my pre-made drawing. But, if you hit the clear button, you'll have a completely open space to draw whatever you want!
+    </p>
+        <section class="container">
+        <div id="tools">
+            <h1><b>Canvas</b></h1>
+            <label for="penColor">Color</label>
+            <input id="penColor" name='penColor' type="color" >
+            <label for="penSize">Pen Size</label>
+            <input id="penSize" name='penSize' type="number" value="6" style="background-color: transparent;">
+            <button id="clear">Clear</button>
+        </div>
+        <br><br>
+        <div class="drawSpace">
+            <canvas id="drawSpace">
+                <script>var img = new Image();
+                    img.onload = function() {
+                        ctx.drawImage(img, 200, 0);
+                    }
+                    img.src = "pictures/drawing.svg";</script>
+            </canvas>
+        </div>
+    </section>
+        <script src = "draw.js"></script>
+        <br></body></html>

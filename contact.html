@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Contact Page</title>
+        <meta charset="UTF-8">
+        <nav>
+            <img  src = "pictures/smileButton.png" alt = "pixel image of smiley face that smiles more when you hove over it" width="24" height="24" onmouseover="this.src='pictures/hoverButton.png'" onmouseout="this.src='pictures/smileButton.png'" >
+            <br>
+            <ul>
+                <li><a href="index.html">Home Page<img class = a alt = "pixel image of star" src = "pictures/star.png" width="15" height="15"></a></li>
+                <li><a href="hometown.html">Hometown<img class = a alt = "pixel image of house" src = "pictures/home.png" width="15" height="15"></a></li>
+                <li><a href="project.html">Projects<img class = a alt = "pixel image of gear" src = "pictures/gear.png" width="15" height="15"></a></li>
+                <li><a href="resume.html">Resume<img class = a alt = "pixel image of paper" src = "pictures/page.png" width="15" height="15"></a></li>
+                <li><a href="contact.html">Contact<img class = a alt = "pixel image of envelope" src = "pictures/mail.png" width="15" height="15"></a></li>
+                <li><a href="drawing.html">Drawing<img class = a alt = "pixel image of paintbrush" src = "pictures/brush.png" width="15" height="15"></a></li></ul></nav>
+        <link href="external_style.css" rel="stylesheet">
+        
+        <script src='main.js'></script>
+        <header>
+            Contact Me</header>
+    <p>If you'd like to contact me please enter your contact information in the provided boxes and your message in the text box below. I'll respond back as soon as I can!</p>
+    <p>If you'd rather email me, you can reach me at <a href = "mailto:maxzink11@gmail.com">maxzink11@gmail.com</a></p>
+    <form name="contactMe" action="mailto:maxzink11@gmail.com" method="post" novalidate onsubmit="return validateForm();">
+        <p>Name:
+            <input type="text" name="name" id="name" style="background-color: rgba(61, 89, 123, 0.264);color: rgb(0, 0, 0);" required>
+        </p>
+    <br>
+        <p>Email:
+            <input type="text" name="email" id="email" style="background-color: rgba(61, 89, 123, 0.264);color: rgb(0, 0, 0);" required>
+        </p>
+    <br><br>
+            <b>Comments</b><br><br>  <br>      Select any boxes that apply to the nature your comments.
+            <p><input type="checkbox" name="comments1" value="Questions">Questions</p>
+            <p><input type="checkbox" name="comments2" value="Recommendations">Professional Inquiries</p>
+            <p><input type="checkbox" id="otherCheck" name="comments3" value="other" onclick="displayOther()">Other 
+            <input type="text" name="otherText" id="otherText" style="background-color: rgba(61, 89, 123, 0.264);color: rgb(0, 0, 0);display: none;"> </p>
+            <textarea rows="5" cols="50" name="extraNotes" style="background-color: rgba(61, 89, 123, 0.264);color: rgb(0, 0, 0);"></textarea><br>
+        <input type="submit" name="submitButton" value="Submit">
+    </form>
+        <br></body></html>
